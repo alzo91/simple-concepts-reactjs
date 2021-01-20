@@ -58,7 +58,9 @@ function App() {
             value={txtTechs}
             onChange={(e) => setTxtTechs(e.target.value)}
           />
-          <button type="submit">Adicionar</button>
+          <button className="add" type="submit">
+            Adicionar
+          </button>
         </div>
       </form>
       <div className="list">
