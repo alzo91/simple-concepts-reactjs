@@ -1,25 +1,68 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
   box-sizing: border-box;
 }
 
 body {
   font-size: 14px;
+  background-color: #e5e5e5;
+  height: 100%;
+  width: 100%;
 }
 
-div {
+div.list {
+  display: flex;
+  flex-direction: row;
   width: 100%;
   margin: 20px;
 }
-
-div li {
+div.list ul {
+}
+div.list li {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  /* align-items: center; */
 }
 
-div li + li {
+div.list li + li {
   margin-top: 15px;
+}
+div.list li span {
+  /* display: flex; */
+  /* flx-direction: column; */
+  /* background-color: aqua; */
+  color: darkblue;
+}
+div.list li button.remove {
+  margin: 0 15px;
+  background: #ca4949;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+form div.form {
+  display: flex;
+  flex-direction: column;
+}
+form input {
+  margin: 7px 14px 7px 14px;
+  padding: 10px;
+  border-radius: 10px;
+  border-style: none;
+}
+
+form div.form label {
+  color: #7159c1;
+  margin-left: 14px;
+  margin-right: 14px;
+  font-weight: bold;
 }
 
 button {
@@ -28,12 +71,9 @@ button {
   border: 0;
   padding: 10px 15px;
   cursor: pointer;
-  margin-top: 15px;
+  margin-top: 5px;
+  margin-left: 14px;
+  margin-right: 14px;
   font-weight: bold;
   font-size: 14px;
-}
-
-div li button {
-  margin: 0 15px;
-  background: #ca4949;
 }
